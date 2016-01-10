@@ -1,0 +1,601 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A693ADE636B4729F5BD69992 /* Pods_TimeKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610FBD6F044AA464896CEEB3 /* Pods_TimeKeeper.framework */; };
+		B6666EB51C405D29005DDE0E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6666EB41C405D29005DDE0E /* Event.swift */; };
+		B6666EB71C405E58005DDE0E /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6666EB61C405E58005DDE0E /* Calendar.swift */; };
+		B666EEA71C405C6800BAC2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B666EEA61C405C6800BAC2A1 /* AppDelegate.swift */; };
+		B666EEA91C405C6800BAC2A1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B666EEA81C405C6800BAC2A1 /* ViewController.swift */; };
+		B666EEAC1C405C6800BAC2A1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B666EEAA1C405C6800BAC2A1 /* Main.storyboard */; };
+		B666EEAE1C405C6800BAC2A1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B666EEAD1C405C6800BAC2A1 /* Assets.xcassets */; };
+		B666EEB11C405C6800BAC2A1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B666EEAF1C405C6800BAC2A1 /* LaunchScreen.storyboard */; };
+		B666EEBC1C405C6800BAC2A1 /* TimeKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B666EEBB1C405C6800BAC2A1 /* TimeKeeperTests.swift */; };
+		B666EEC71C405C6800BAC2A1 /* TimeKeeperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B666EEC61C405C6800BAC2A1 /* TimeKeeperUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B666EEB81C405C6800BAC2A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B666EE9B1C405C6700BAC2A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B666EEA21C405C6800BAC2A1;
+			remoteInfo = TimeKeeper;
+		};
+		B666EEC31C405C6800BAC2A1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B666EE9B1C405C6700BAC2A1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B666EEA21C405C6800BAC2A1;
+			remoteInfo = TimeKeeper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		610FBD6F044AA464896CEEB3 /* Pods_TimeKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		89983847E460954E2C0D7E76 /* Pods-TimeKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeKeeper/Pods-TimeKeeper.debug.xcconfig"; sourceTree = "<group>"; };
+		98F2270223C1C2605095CCAA /* Pods-TimeKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeKeeper/Pods-TimeKeeper.release.xcconfig"; sourceTree = "<group>"; };
+		B6666EB41C405D29005DDE0E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Calendar/Event.swift; sourceTree = "<group>"; };
+		B6666EB61C405E58005DDE0E /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Calendar.swift; path = Calendar/Calendar.swift; sourceTree = "<group>"; };
+		B666EEA31C405C6800BAC2A1 /* TimeKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B666EEA61C405C6800BAC2A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B666EEA81C405C6800BAC2A1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B666EEAB1C405C6800BAC2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B666EEAD1C405C6800BAC2A1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B666EEB01C405C6800BAC2A1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B666EEB21C405C6800BAC2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B666EEB71C405C6800BAC2A1 /* TimeKeeperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeKeeperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B666EEBB1C405C6800BAC2A1 /* TimeKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeperTests.swift; sourceTree = "<group>"; };
+		B666EEBD1C405C6800BAC2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B666EEC21C405C6800BAC2A1 /* TimeKeeperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeKeeperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B666EEC61C405C6800BAC2A1 /* TimeKeeperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeKeeperUITests.swift; sourceTree = "<group>"; };
+		B666EEC81C405C6800BAC2A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B666EEA01C405C6800BAC2A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A693ADE636B4729F5BD69992 /* Pods_TimeKeeper.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B666EEB41C405C6800BAC2A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B666EEBF1C405C6800BAC2A1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		47E1F920E83713BCB4FCDFDE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89983847E460954E2C0D7E76 /* Pods-TimeKeeper.debug.xcconfig */,
+				98F2270223C1C2605095CCAA /* Pods-TimeKeeper.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B6666EB31C405CF7005DDE0E /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				B6666EB41C405D29005DDE0E /* Event.swift */,
+				B6666EB61C405E58005DDE0E /* Calendar.swift */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		B666EE9A1C405C6700BAC2A1 = {
+			isa = PBXGroup;
+			children = (
+				B666EEA51C405C6800BAC2A1 /* TimeKeeper */,
+				B666EEBA1C405C6800BAC2A1 /* TimeKeeperTests */,
+				B666EEC51C405C6800BAC2A1 /* TimeKeeperUITests */,
+				B666EEA41C405C6800BAC2A1 /* Products */,
+				47E1F920E83713BCB4FCDFDE /* Pods */,
+				F7EF68DDCDCEA0F563452A34 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B666EEA41C405C6800BAC2A1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B666EEA31C405C6800BAC2A1 /* TimeKeeper.app */,
+				B666EEB71C405C6800BAC2A1 /* TimeKeeperTests.xctest */,
+				B666EEC21C405C6800BAC2A1 /* TimeKeeperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B666EEA51C405C6800BAC2A1 /* TimeKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				B6666EB31C405CF7005DDE0E /* Calendar */,
+				B666EEA61C405C6800BAC2A1 /* AppDelegate.swift */,
+				B666EEA81C405C6800BAC2A1 /* ViewController.swift */,
+				B666EEAA1C405C6800BAC2A1 /* Main.storyboard */,
+				B666EEAD1C405C6800BAC2A1 /* Assets.xcassets */,
+				B666EEAF1C405C6800BAC2A1 /* LaunchScreen.storyboard */,
+				B666EEB21C405C6800BAC2A1 /* Info.plist */,
+			);
+			path = TimeKeeper;
+			sourceTree = "<group>";
+		};
+		B666EEBA1C405C6800BAC2A1 /* TimeKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				B666EEBB1C405C6800BAC2A1 /* TimeKeeperTests.swift */,
+				B666EEBD1C405C6800BAC2A1 /* Info.plist */,
+			);
+			path = TimeKeeperTests;
+			sourceTree = "<group>";
+		};
+		B666EEC51C405C6800BAC2A1 /* TimeKeeperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B666EEC61C405C6800BAC2A1 /* TimeKeeperUITests.swift */,
+				B666EEC81C405C6800BAC2A1 /* Info.plist */,
+			);
+			path = TimeKeeperUITests;
+			sourceTree = "<group>";
+		};
+		F7EF68DDCDCEA0F563452A34 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				610FBD6F044AA464896CEEB3 /* Pods_TimeKeeper.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B666EEA21C405C6800BAC2A1 /* TimeKeeper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B666EECB1C405C6800BAC2A1 /* Build configuration list for PBXNativeTarget "TimeKeeper" */;
+			buildPhases = (
+				B0C85095703FFE511CDA797B /* Check Pods Manifest.lock */,
+				B666EE9F1C405C6800BAC2A1 /* Sources */,
+				B666EEA01C405C6800BAC2A1 /* Frameworks */,
+				B666EEA11C405C6800BAC2A1 /* Resources */,
+				8BD022E36A15F823047C8057 /* Embed Pods Frameworks */,
+				AEEA0950B23BF82B95A91310 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TimeKeeper;
+			productName = TimeKeeper;
+			productReference = B666EEA31C405C6800BAC2A1 /* TimeKeeper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B666EEB61C405C6800BAC2A1 /* TimeKeeperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B666EECE1C405C6800BAC2A1 /* Build configuration list for PBXNativeTarget "TimeKeeperTests" */;
+			buildPhases = (
+				B666EEB31C405C6800BAC2A1 /* Sources */,
+				B666EEB41C405C6800BAC2A1 /* Frameworks */,
+				B666EEB51C405C6800BAC2A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B666EEB91C405C6800BAC2A1 /* PBXTargetDependency */,
+			);
+			name = TimeKeeperTests;
+			productName = TimeKeeperTests;
+			productReference = B666EEB71C405C6800BAC2A1 /* TimeKeeperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B666EEC11C405C6800BAC2A1 /* TimeKeeperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B666EED11C405C6800BAC2A1 /* Build configuration list for PBXNativeTarget "TimeKeeperUITests" */;
+			buildPhases = (
+				B666EEBE1C405C6800BAC2A1 /* Sources */,
+				B666EEBF1C405C6800BAC2A1 /* Frameworks */,
+				B666EEC01C405C6800BAC2A1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B666EEC41C405C6800BAC2A1 /* PBXTargetDependency */,
+			);
+			name = TimeKeeperUITests;
+			productName = TimeKeeperUITests;
+			productReference = B666EEC21C405C6800BAC2A1 /* TimeKeeperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B666EE9B1C405C6700BAC2A1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Braintree;
+				TargetAttributes = {
+					B666EEA21C405C6800BAC2A1 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					B666EEB61C405C6800BAC2A1 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B666EEA21C405C6800BAC2A1;
+					};
+					B666EEC11C405C6800BAC2A1 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = B666EEA21C405C6800BAC2A1;
+					};
+				};
+			};
+			buildConfigurationList = B666EE9E1C405C6700BAC2A1 /* Build configuration list for PBXProject "TimeKeeper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B666EE9A1C405C6700BAC2A1;
+			productRefGroup = B666EEA41C405C6800BAC2A1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B666EEA21C405C6800BAC2A1 /* TimeKeeper */,
+				B666EEB61C405C6800BAC2A1 /* TimeKeeperTests */,
+				B666EEC11C405C6800BAC2A1 /* TimeKeeperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B666EEA11C405C6800BAC2A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B666EEB11C405C6800BAC2A1 /* LaunchScreen.storyboard in Resources */,
+				B666EEAE1C405C6800BAC2A1 /* Assets.xcassets in Resources */,
+				B666EEAC1C405C6800BAC2A1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B666EEB51C405C6800BAC2A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B666EEC01C405C6800BAC2A1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8BD022E36A15F823047C8057 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeKeeper/Pods-TimeKeeper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEEA0950B23BF82B95A91310 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TimeKeeper/Pods-TimeKeeper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0C85095703FFE511CDA797B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B666EE9F1C405C6800BAC2A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B666EEA91C405C6800BAC2A1 /* ViewController.swift in Sources */,
+				B6666EB51C405D29005DDE0E /* Event.swift in Sources */,
+				B666EEA71C405C6800BAC2A1 /* AppDelegate.swift in Sources */,
+				B6666EB71C405E58005DDE0E /* Calendar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B666EEB31C405C6800BAC2A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B666EEBC1C405C6800BAC2A1 /* TimeKeeperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B666EEBE1C405C6800BAC2A1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B666EEC71C405C6800BAC2A1 /* TimeKeeperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B666EEB91C405C6800BAC2A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B666EEA21C405C6800BAC2A1 /* TimeKeeper */;
+			targetProxy = B666EEB81C405C6800BAC2A1 /* PBXContainerItemProxy */;
+		};
+		B666EEC41C405C6800BAC2A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B666EEA21C405C6800BAC2A1 /* TimeKeeper */;
+			targetProxy = B666EEC31C405C6800BAC2A1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B666EEAA1C405C6800BAC2A1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B666EEAB1C405C6800BAC2A1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B666EEAF1C405C6800BAC2A1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B666EEB01C405C6800BAC2A1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B666EEC91C405C6800BAC2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B666EECA1C405C6800BAC2A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B666EECC1C405C6800BAC2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89983847E460954E2C0D7E76 /* Pods-TimeKeeper.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.TimeKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B666EECD1C405C6800BAC2A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98F2270223C1C2605095CCAA /* Pods-TimeKeeper.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = TimeKeeper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.TimeKeeper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B666EECF1C405C6800BAC2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.TimeKeeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeKeeper.app/TimeKeeper";
+			};
+			name = Debug;
+		};
+		B666EED01C405C6800BAC2A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = TimeKeeperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.TimeKeeperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TimeKeeper.app/TimeKeeper";
+			};
+			name = Release;
+		};
+		B666EED21C405C6800BAC2A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeKeeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.TimeKeeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TimeKeeper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B666EED31C405C6800BAC2A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TimeKeeperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.braintreepayments.TimeKeeperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = TimeKeeper;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B666EE9E1C405C6700BAC2A1 /* Build configuration list for PBXProject "TimeKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B666EEC91C405C6800BAC2A1 /* Debug */,
+				B666EECA1C405C6800BAC2A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B666EECB1C405C6800BAC2A1 /* Build configuration list for PBXNativeTarget "TimeKeeper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B666EECC1C405C6800BAC2A1 /* Debug */,
+				B666EECD1C405C6800BAC2A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B666EECE1C405C6800BAC2A1 /* Build configuration list for PBXNativeTarget "TimeKeeperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B666EECF1C405C6800BAC2A1 /* Debug */,
+				B666EED01C405C6800BAC2A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B666EED11C405C6800BAC2A1 /* Build configuration list for PBXNativeTarget "TimeKeeperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B666EED21C405C6800BAC2A1 /* Debug */,
+				B666EED31C405C6800BAC2A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B666EE9B1C405C6700BAC2A1 /* Project object */;
+}
