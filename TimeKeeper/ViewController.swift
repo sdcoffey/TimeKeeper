@@ -15,17 +15,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     private var events: Results<Event>!
     private var calendar: Calendar = Calendar()
     private static let collectionViewResuseId = "timeKeeperCollectionViewCell"
+    private let palette: Palette = Hazel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let buttonHeight: CGFloat = 40
-        let eventButton = newEventButton(CGRectMake(0, self.view.frame.size.height - buttonHeight, self.view.frame.size.width, buttonHeight))
-        self.view.addSubview(eventButton)
-        
-        let eventListFrame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height - buttonHeight)
-        let layout = UICollectionViewFlowLayout()
-        eventList = UICollectionView(frame: eventListFrame, collectionViewLayout: layout)
+        eventList = UICollectionView(frame: self.view.frame, collectionViewLayout: UICollectionViewFlowLayout())
         eventList.delegate = self
         eventList.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: ViewController.collectionViewResuseId)
         eventList.backgroundColor = UIColor(white: 0.98, alpha: 1)
@@ -47,7 +42,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         let event2 = Event()
         event2.endTime = event.startTime
-        event2.startTime = event2.endTime.dateByAddingTimeInterval(-Calendar.HOUR * 2)
+        event2.startTime = event2.endTime.dateByAddingTimeInterval(-Calendar.HOUR)
         event2.label = "Youtube"
         
         calendar.addEvent(event)
@@ -73,8 +68,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         cell.contentView.addSubview(label)
         
-        let colorPercent = abs(Double(size.height / collectionView.frame.size.height) - 1.0)
-        cell.backgroundColor = UIColor(red: 0.8, green: 0.129, blue: 0.129, alpha: CGFloat(colorPercent))
+        let color = self.palette.blend(Float(indexPath.row + 1) / Float(events.count))
+        cell.backgroundColor = color
         
         return cell
     }
@@ -89,7 +84,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func sizeForEvent(event: Event) -> CGSize {
         let effectiveDuration = event.durationInDay(self.calendar.today)
-        let height = eventList.frame.size.height * CGFloat(effectiveDuration / Calendar.DAY)
+        let height = eventList.frame.size.height * CGFloat(effectiveDuration / Calendar.eventsDuration(events))
         return CGSizeMake(self.eventList.frame.size.width, height)
     }
     
@@ -103,19 +98,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func prefersStatusBarHidden() -> Bool {
         return true
-    }
-    
-    func newEventButton(rect: CGRect) -> UIButton {
-        let button = UIButton(frame: rect)
-        button.titleLabel?.text = "New Task"
-        button.titleLabel?.textColor = UIColor.whiteColor()
-        button.backgroundColor = UIColor.blueColor()
-        button.addTarget(self, action: "addEventButtonTapped:", forControlEvents: UIControlEvents.TouchUpInside)
-        
-        return button
-    }
-    
-    func addEventButtonTapped(sender: UIButton) {
     }
 }
 

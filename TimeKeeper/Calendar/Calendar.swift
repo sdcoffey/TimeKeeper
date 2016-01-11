@@ -30,7 +30,7 @@ class Calendar {
         let todayEnd = NSDate(timeInterval: Calendar.DAY, sinceDate: todayStart)
         
         let predicate = NSPredicate(format: "startTime > %@ OR endTime < %@", todayStart, todayEnd)
-        return realm.objects(Event).filter(predicate)
+        return realm.objects(Event).filter(predicate).sorted("startTime")
     }
     
     func addEvent(event: Event) {
@@ -43,5 +43,13 @@ class Calendar {
         try! realm.write {
             realm.deleteAll()
         }
+    }
+    
+    class func eventsDuration(events: Results<Event>) -> NSTimeInterval {
+        guard let end = events.last, begin = events.first else {
+            return 0
+        }
+        
+        return end.endTime.timeIntervalSinceDate(begin.startTime)
     }
 }

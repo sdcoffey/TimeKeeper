@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A693ADE636B4729F5BD69992 /* Pods_TimeKeeper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 610FBD6F044AA464896CEEB3 /* Pods_TimeKeeper.framework */; };
+		AA2839EB1C4381C700D57651 /* ColorPallette.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2839EA1C4381C700D57651 /* ColorPallette.swift */; };
 		B6666EB51C405D29005DDE0E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6666EB41C405D29005DDE0E /* Event.swift */; };
 		B6666EB71C405E58005DDE0E /* Calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6666EB61C405E58005DDE0E /* Calendar.swift */; };
 		B666EEA71C405C6800BAC2A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B666EEA61C405C6800BAC2A1 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 		610FBD6F044AA464896CEEB3 /* Pods_TimeKeeper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TimeKeeper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		89983847E460954E2C0D7E76 /* Pods-TimeKeeper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeKeeper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TimeKeeper/Pods-TimeKeeper.debug.xcconfig"; sourceTree = "<group>"; };
 		98F2270223C1C2605095CCAA /* Pods-TimeKeeper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TimeKeeper.release.xcconfig"; path = "Pods/Target Support Files/Pods-TimeKeeper/Pods-TimeKeeper.release.xcconfig"; sourceTree = "<group>"; };
+		AA2839EA1C4381C700D57651 /* ColorPallette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorPallette.swift; path = Color/ColorPallette.swift; sourceTree = "<group>"; };
 		B6666EB41C405D29005DDE0E /* Event.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Event.swift; path = Calendar/Event.swift; sourceTree = "<group>"; };
 		B6666EB61C405E58005DDE0E /* Calendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Calendar.swift; path = Calendar/Calendar.swift; sourceTree = "<group>"; };
 		B666EEA31C405C6800BAC2A1 /* TimeKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +94,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AA2839EC1C4381CE00D57651 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				AA2839EA1C4381C700D57651 /* ColorPallette.swift */,
+			);
+			name = Color;
+			sourceTree = "<group>";
+		};
 		B6666EB31C405CF7005DDE0E /* Calendar */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 		B666EEA51C405C6800BAC2A1 /* TimeKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				AA2839EC1C4381CE00D57651 /* Color */,
 				B6666EB31C405CF7005DDE0E /* Calendar */,
 				B666EEA61C405C6800BAC2A1 /* AppDelegate.swift */,
 				B666EEA81C405C6800BAC2A1 /* ViewController.swift */,
@@ -345,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA2839EB1C4381C700D57651 /* ColorPallette.swift in Sources */,
 				B666EEA91C405C6800BAC2A1 /* ViewController.swift in Sources */,
 				B6666EB51C405D29005DDE0E /* Event.swift in Sources */,
 				B666EEA71C405C6800BAC2A1 /* AppDelegate.swift in Sources */,
